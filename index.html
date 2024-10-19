@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>MineMonitor - Next Gen Minecraft Server Checker</title>
+      
+        <!-- Favicon Link -->
+        <link rel="icon" type="image/png" href="favicon.png"> <!-- Or .jpg/.ico -->
+      
+        <link rel="stylesheet" href="styles.css">
+        <script defer src="script.js"></script>
+      </head>
+<body>
+  <div class="container">
+    <h1>MineMonitor</h1>
+    <p>Enter a Minecraft server IP below to get real-time stats!</p>
+
+    <div class="input-section">
+      <input type="text" id="server-ip" placeholder="Enter Server IP">
+      <button onclick="checkServer()">Check Now</button>
+    </div>
+
+    <div id="loading" class="loading hidden">
+      <div class="loader"></div>
+      <p>Fetching server data...</p>
+    </div>
+
+    <div id="server-info" class="server-info hidden">
+      <h2>Server Status</h2>
+      <p><strong>IP:</strong> <span id="ip"></span></p>
+      <p><strong>Status:</strong> <span id="status"></span></p>
+      <p><strong>Version:</strong> <span id="version"></span></p>
+      <p><strong>Players Online:</strong> <span id="players"></span></p>
+      <p><strong>Ping:</strong> <span id="ping"></span> ms</p>
+      <p><strong>MotD:</strong> <span id="motd"></span></p>
+    </div>
+  </div>
+</body>
+</html>
